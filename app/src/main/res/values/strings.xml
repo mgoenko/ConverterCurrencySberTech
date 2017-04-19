@@ -1,0 +1,8 @@
+<resources>
+   <string name="app_name">Конвертер валют СберТех</string>
+   <string name="enter_amount">Введите исходную сумму</string>
+   <string name="tip">Исходной валюта</string>
+   <string name="total">Конечная валюта</string>
+   <string name="result">Конечная сумма</string>
+   <string name="resultkesh">00.00</string>
+</resources>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout
+   xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+   android:layout_width="match_parent"
+   android:layout_height="match_parent"
+   android:paddingLeft="16dp"
+   android:paddingRight="16dp"
+   android:paddingTop="@dimen/activity_vertical_margin"
+   android:paddingBottom="@dimen/activity_vertical_margin"
+   tools:context=".MainActivity"
+   android:columnCount="2"
+   android:useDefaultMargins="true">
+
+   <EditText
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:inputType="number"
+      android:id="@+id/amountEditText"
+      android:layout_column="0"
+      android:digits="0123456789"
+      android:maxLength="6"
+      android:ems="10"
+      android:layout_columnSpan="2"/>
+
+   <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textAppearance="?android:attr/textAppearanceMedium"
+      android:id="@+id/amountTextView"
+      android:layout_row="0"
+      android:layout_column="0"
+      android:layout_columnSpan="2"
+      android:hint="@string/enter_amount"
+      android:layout_gravity="fill_horizontal"
+      android:background="@color/amount_background"
+      android:padding="@dimen/textview_padding"
+      android:elevation="@dimen/elevation"/>
+
+   <TextView
+      android:layout_width="160dp"
+       android:textAppearance="?android:attr/textAppearanceMedium"
+      android:id="@+id/tipTextView"
+      android:layout_gravity="fill_horizontal"
+      android:background="@color/result_background"
+      android:gravity="center"
+      android:padding="@dimen/textview_padding"
+      android:elevation="@dimen/elevation"
+       android:layout_row="1"
+       android:layout_column="1"
+       android:layout_height="70dp" /> >
+   <TextView
+       android:textAppearance="?android:attr/textAppearanceMedium"
+      android:id="@+id/totalTextView"
+      android:layout_gravity="fill_horizontal"
+      android:background="@color/result_background"
+      android:gravity="center"
+      android:padding="@dimen/textview_padding"
+      android:elevation="@dimen/elevation"
+       android:layout_row="2"
+       android:layout_column="1"
+       android:layout_width="160dp"
+       android:layout_height="70dp" />
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="41dp"
+       android:id="@+id/ResultlLabeltextView"
+       android:layout_row="4"
+       android:layout_column="0"
+       android:text="@string/result"
+       android:textAppearance="?android:attr/textAppearanceMedium"
+       android:textSize="24sp" />
+
+   <TextView
+      android:layout_width="184dp"
+      android:layout_height="43dp"
+      android:textAppearance="?android:attr/textAppearanceMedium"
+      android:text="@string/tip"
+      android:id="@+id/tipLabelTextView"
+      android:layout_gravity="right"
+       android:layout_row="1"
+       android:layout_column="0" />
+
+   <TextView
+      android:layout_width="180dp"
+      android:layout_height="44dp"
+      android:textAppearance="?android:attr/textAppearanceMedium"
+      android:text="@string/total"
+      android:id="@+id/totalLabelTextView"
+      android:layout_gravity="right"
+       android:layout_row="2"
+       android:layout_column="0" />
+
+   <TextView
+       android:text="@string/resultkesh"
+       android:layout_width="158dp"
+       android:layout_height="wrap_content"
+       android:id="@+id/ResultKeshtextView"
+       android:layout_row="4"
+       android:layout_column="1"
+       android:textAppearance="?android:attr/textAppearanceMedium"
+       android:layout_gravity="top|bottom" />
+
+   <android.support.design.widget.FloatingActionButton
+       android:id="@+id/floatingActionButton"
+       android:layout_width="87dp"
+       android:layout_height="87dp"
+       android:layout_marginTop="90dp"
+       android:layout_marginEnd="16dp"
+       android:layout_marginBottom="16dp"
+       android:layout_marginStart="16dp"
+       app:backgroundTint="@color/amount_background"
+       android:layout_row="3"
+       android:layout_column="1"
+       app:srcCompat="@drawable/ic_check_circle_black_24dp"
+       backgroundTint="@color/amount_background"
+       app:rippleColor="@color/amount_background"
+       android:layout_margin="@dimen/activity_horizontal_margin"
+       android:layout_gravity="center_vertical|center" />
+
+</GridLayout>
